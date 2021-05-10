@@ -38,7 +38,6 @@ public class DotComBust {
         }
         finishGame();   // call our own finishGame method
     }
-}
 
 private void checkUserGUess(String userGuess)    {
     numberOfGuesses += 1;   // increment the number of guesses he has made
