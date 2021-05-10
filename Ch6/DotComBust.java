@@ -1,4 +1,4 @@
-import java.util.*;
+qimport java.util.*;
 public class DotComBust {
     // declare and initialise all the variables we'll need    
     private GameHelper helper = new GameHelper();
@@ -6,7 +6,7 @@ public class DotComBust {
     private int numberOfGuesses = 0;
 
     private void setUpGame ()   {
-        // first make some dot coms and give them locations
+        // Make three DotCom objects, give 'em name and stick 'em in the ArrayList
         DotCom one = new DotCom();
         one.setName("Pets.com");
         DotCom two = new DotCom();
@@ -23,8 +23,8 @@ public class DotComBust {
         System.out.println("Pets.com, eToys.com, Go2.com");
         System.out.println("Try to sink them all in the fewest number of guesses");
 
-        for (DotCom dotComToSet: dotComsList)   {
-            ArrayList<String> newLocation = helper.placeDotCom(3);
+        for (DotCom dotComToSet: dotComsList)   {   // repeat with each DotCom in the List
+            ArrayList<String> newLocation = helper.placeDotCom(3);  // ask the helper for a DotCom location
             dotComToSet.setLocationCells(newLocation);  // call the setter method on this 
                                                         // DotCom to give it the location 
                                                         // you just got from the helper
@@ -43,7 +43,7 @@ private void checkUserGUess(String userGuess)    {
     numberOfGuesses += 1;   // increment the number of guesses he has made
     String result = "miss"; // assume it's a "miss", unless told otherwise
 
-    for (DotCom dotComToTest : dotComsList) {   
+    for (DotCom dotComToTest : dotComsList) {   // repeat with each DotCom in the List
         result = dotComToTest.checkYourself(userGuess); // ask the DotCom to check the
                                             // user guess, looking for a hit or kill
         if (result.equals("hit"))   break;  // get out of the loop early no point in testing the others
@@ -54,7 +54,7 @@ private void checkUserGUess(String userGuess)    {
             break;
         }
     }
-    System.out.println(result);
+    System.out.println(result); // print the result for the user
 }
 
 private void finishGame()   {
@@ -73,4 +73,7 @@ public static void main (String [] args)    {
     DotComBust game = new DotComBust(); // create a game object
     game.setUpGame();   // tell the game object to set up the game
     game.startPlaying();    // tell the game object to star the main game loop
+
 }
+
+// score 18 / 21
