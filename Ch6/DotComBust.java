@@ -1,4 +1,4 @@
-qimport java.util.*;
+import java.util.*;
 public class DotComBust {
     // declare and initialise all the variables we'll need    
     private GameHelper helper = new GameHelper();
@@ -74,6 +74,7 @@ public static void main (String [] args)    {
     game.setUpGame();   // tell the game object to set up the game
     game.startPlaying();    // tell the game object to star the main game loop
 
+}
 }
 
 // score 18 / 21
