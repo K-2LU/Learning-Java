@@ -7,7 +7,7 @@ public class Doctor {
     }
 }
 
-// subclass
+// subclasses
 public class FamilyDoctor extends Doctor    {
     boolean makesHouseCalls;
     void giveAdvice()   {
