@@ -32,7 +32,9 @@ public class Mixed2 {
         B b = new B();
         C c = new C();
         A a2 = new C();
+
         
+
         // A’s m1, A’s m2, C’s m3, 13
         a2.m1();
         a2.m2();
