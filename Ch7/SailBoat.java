@@ -1,5 +1,5 @@
 public class SailBoat extends Boat {
-    public void drift()   {
-        System.out.print("drift ");
+    public void move()   {
+        System.out.print("hoist sail");
     }
 }

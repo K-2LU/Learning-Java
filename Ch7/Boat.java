@@ -9,6 +9,6 @@ public class Boat{
         }
 
         public void move() {
-            System.out.print("hoist sail");
+            System.out.print("drift ");
         }
 }
