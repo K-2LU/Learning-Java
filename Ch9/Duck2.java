@@ -13,4 +13,5 @@ public class Duck2 {
         System.out.println("Quack! size: " + size );
     }
     // Overloaded constructors: more than one constuctor in a class
+    // to compile, each constructor must have different argument list
 }
