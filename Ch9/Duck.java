@@ -2,13 +2,16 @@
 public class Duck   {
     int size;
 
-    public Duck()   {   // constructor
+    public Duck(int duckSize)   {   // constructor
         System.out.println("Quack");
-    }
 
+        size = duckSize;
+        System.out.println("size is" + size);
+    }
+/*
     public void setSize(int newSize)    {   // setter method
         size = newSize;
-    }
+    }*/
 }
 
 // methods must have a return type 
