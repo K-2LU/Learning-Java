@@ -6,7 +6,7 @@ public class Duck   {
         System.out.println("Quack");
 
         size = duckSize;
-        System.out.println("size is" + size);
+        System.out.println("size is " + size);
     }
 /*
     public void setSize(int newSize)    {   // setter method
