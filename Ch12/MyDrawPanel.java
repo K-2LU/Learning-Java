@@ -33,6 +33,6 @@ public class MyDrawPanel extends JPanel {
 
         GradientPaint gradient = new GradientPaint(70, 70, startColor, 150, 150, endColor);
         g2D.setPaint(gradient);
-        g2D.fillOval(70, 70, 100, 100);
+        g2D.fillRect(70, 70, 100, 100);
     }
 }

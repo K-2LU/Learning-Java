@@ -1,38 +1,29 @@
 import javax.swing.*;
-import java.awt.event.*; // import statement for the package that ActionListener
-                         // and ActionEvent are in
+import java.awt.event.*;
 
-// implement the interface. THis says to the button "an instance of SimpleGUI1b
-// is-a ActionListener"
-public class SimpleGUI1b implements ActionListener {
+public class SimpleGUI1b implements ActionListener{
     JButton button;
+    JButton button2;
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         SimpleGUI1b gui = new SimpleGUI1b();
+
         gui.go();
     }
 
-    public void go() {
+    public void go()    {
         JFrame frame = new JFrame();
-        button = new JButton("Click me!");
-
-        // register your interest with button. This says to the button, "Add me
-        // to your lists of listener". The argument you pass MUST be and objext
-        // from a class that implements ActionListener!!
+        button = new JButton("Click here!");
+        
         button.addActionListener(this);
 
         frame.getContentPane().add(button);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(300, 300);
+        frame.setSize(399, 399);
         frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    // Implement the ActionListener interface's actionPerformed() method. This
-    // is the actual event-handling method!
-    public void actionPerformed(ActionEvent event) {
-        button.setText("I have been clicked");
+    public void actionPerformed(ActionEvent e)  {
+        button.setText("The button has been clicked!");
     }
-    // The button calls this method to let you know that an event happened. It
-    // sends you and ActionEvent object as the argument, but we don't need it.
-    // Knowing the event happened is enough for us
 }

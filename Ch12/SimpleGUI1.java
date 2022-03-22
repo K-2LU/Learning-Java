@@ -1,4 +1,3 @@
-package Ch12;
 import javax.swing.*;
 
 public class SimpleGUI1 {
